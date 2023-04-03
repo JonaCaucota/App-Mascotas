@@ -1,0 +1,9 @@
+.columna{
+    display: flex;
+    justify-content: center !important;
+}
+
+.card-size{
+    width: 9rem;
+    height: 9rem;
+}

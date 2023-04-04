@@ -6,7 +6,7 @@ $(document).ready(function () {
     });
 });
 
-
+//Add images
 $(document).ready(function () {
     let allImg = $('.img-card').toArray();
     let i = 0;
@@ -22,6 +22,10 @@ $(document).ready(function () {
     });
 });
 
+$('#delete-button').click(function () {
+    alert("URL Borrada");
+    $('#img-url').val('');
+})
 
 
 

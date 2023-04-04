@@ -10,15 +10,18 @@ $(document).ready(function () {
 $(document).ready(function () {
     let allImg = $('.img-card').toArray();
     let i = 0;
-    let src = null;
 
     $('#add-button').click(function () {
-        $(allImg[i]).attr('src', $('#img-url').val());
-        if (i >= allImg.length) {
-            i = 0;
+        if ($(allImg[i]).attr('src') !== 'images/no_pet.svg') {
+            i++;
+            if (i >= allImg.length) {
+                i = 0;
+            }
         }
+        $(allImg[i]).attr('src', $('#img-url').val());
     });
 });
+
 
 
 

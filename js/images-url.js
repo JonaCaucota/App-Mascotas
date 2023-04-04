@@ -10,13 +10,19 @@ $(document).ready(function () {
 $(document).ready(function () {
     let allImg = $('.img-card').toArray();
     let i = 0;
+    let regex = /^https?:\/\//
 
     $('#add-button').click(function () {
+        let url = $('#img-url').val();
         if ($(allImg[i]).attr('src') !== 'images/no_pet.svg') {
             i++;
             if (i >= allImg.length) {
                 i = 0;
             }
+        }
+        if (!regex.test(url)) {
+            alert('La URL de la imagen no es válida');
+            return;
         }
         $(allImg[i]).attr('src', $('#img-url').val());
     });

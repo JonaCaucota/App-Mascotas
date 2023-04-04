@@ -8,4 +8,5 @@ Integrantes:
   - Jonathan Caucota
   - Matias Belli
   - Paula Coelli
-  - Claudia Baez             
+  - Claudia Baez
+  - Valeria Linares
